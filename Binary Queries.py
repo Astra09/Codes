@@ -1,0 +1,21 @@
+n,q=map(int,input().split())
+ls=list(input().split())
+while(q>0):
+    cmd=list(map(int,input().split()))
+    if(cmd[0]==0):
+        l=cmd[1]
+        r=cmd[2]
+        sub=ls[l-1:r]
+        sub=''.join(sub)
+        sub=int(sub,2)
+        if(sub%2==0):
+            print("EVEN")
+        else:
+            print("ODD")
+    else:
+        x=cmd[1]
+        if(ls[x-1]=='0'):
+            ls[x-1]='1'
+        else:
+            ls[x-1]='0'
+    q-=1

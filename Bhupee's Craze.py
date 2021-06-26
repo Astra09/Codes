@@ -1,0 +1,14 @@
+t=int(input())
+while(t>0):
+    n=int(input())
+    mins=50
+    while(n>0):
+        s=input()
+        ss=list(s)
+        ss=list(set(ss))
+        if(len(ss)<=mins):
+            mins=len(ss)
+            res=s
+        n-=1
+    print(res)
+    t-=1

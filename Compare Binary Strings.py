@@ -1,0 +1,11 @@
+n,q=map(int,input().split())
+s1=input()
+s2=input()
+while(q>0):
+    r=int(input())
+    s2=s2[0:r-1]+'1'+s2[r:]
+    if(s2>=s1):
+        print("YES")
+    else:
+        print("NO")
+    q-=1
